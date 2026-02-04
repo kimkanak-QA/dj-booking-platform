@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registered</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h2>✅ Registration Successful</h2>
+
+    <p><strong>Name:</strong> {{ dj.name }}</p>
+    <p><strong>City:</strong> {{ dj.city }}</p>
+    <p><strong>Genre:</strong> {{ dj.genre }}</p>
+    <p><strong>Experience:</strong> {{ dj.experience }} years</p>
+    <p><strong>Price:</strong> ₹{{ dj.price }}</p>
+    <p><strong>Phone:</strong> {{ dj.phone }}</p>
+
+    <br>
+    <a href="/register">Register another DJ</a><br>
+    <a href="/djs">View all DJs</a><br>
+    <a href="/">Back to Home</a>
+</body>
+</html>

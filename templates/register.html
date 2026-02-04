@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register as DJ</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h2>🎵 DJ Registration</h2>
+
+    <form method="post">
+        <label>DJ Name:</label><br>
+        <input name="name"><br><br>
+
+        <label>City:</label><br>
+        <input name="city"><br><br>
+
+        <label>Genre:</label><br>
+        <input name="genre"><br><br>
+
+        <label>Experience (years):</label><br>
+        <input name="experience"><br><br>
+
+        <label>Price per Event:</label><br>
+        <input name="price"><br><br>
+
+        <label>Phone Number:</label><br>
+        <input name="contact"><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <br>
+    <a href="/">⬅ Back to Home</a>
+</body>
+</html>

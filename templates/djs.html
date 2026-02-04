@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DJ List</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h1>Available DJs</h1>
+
+<ul>
+    {% for dj in djs %}
+        <li>
+            <strong>{{ dj[0] }}</strong><br>
+            City: {{ dj[1] }}<br>
+            Genre: {{ dj[2] }}<br>
+            Contact: {{ dj[3] }}
+
+            <a href="https://wa.me/{{ dj[3] }}?text=Hi%20I%20found%20you%20on%20DJ%20Booking%20Platform"
+   target="_blank">
+   📱 Book on WhatsApp
+</a>
+
+        </li>
+    {% endfor %}
+</ul>
+
+<a href="/">Back to Home</a>
+
+</body>
+</html>
