@@ -8,9 +8,7 @@ ConfigArgParse==1.7
 Flask==3.1.2
 Flask-Cors==4.0.1
 Flask-Login==0.6.3
-gevent==24.2.1
 geventhttpclient==2.3.1
-greenlet==3.0.3
 h11==0.16.0
 idna==3.7
 iniconfig==2.1.0
